@@ -1,0 +1,29 @@
+# scratch output of tools/*.sh
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# KiCad per-user and temporary files
+*.kicad_prl
+*-backups/
+*.bak
+*.lck
+~*.lck
+_autosave-*
+fp-info-cache
+*-cache.lib
+\#auto_saved_files\#
+
+# vendor 3D models are downloaded, not committed (see hardware/lib/3d/README.md)
+hardware/lib/3d/*.step
+hardware/lib/3d/*.stp
+hardware/lib/3d/*.wrl
+
+# Intermediate design docs
+*.docx
+
+# Other cruft
+.DS_Store
+._*

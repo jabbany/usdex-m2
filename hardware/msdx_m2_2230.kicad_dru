@@ -1,0 +1,19 @@
+(version 1)
+
+# Custom design rules for the PCIe pairs. See DESIGN.md, "Layout rules".
+
+(rule "skew: PCIE_TX"
+  (condition "A.inDiffPair('PCIE_TX')")
+  (constraint skew (max 0.15mm)))
+
+(rule "skew: PCIE_RX (finger to capacitor)"
+  (condition "A.inDiffPair('PCIE_RX')")
+  (constraint skew (max 0.15mm)))
+
+(rule "skew: PCIE_RX_C (capacitor to socket)"
+  (condition "A.inDiffPair('PCIE_RX_C')")
+  (constraint skew (max 0.15mm)))
+
+(rule "skew: PCIE_REFCLK"
+  (condition "A.inDiffPair('PCIE_REFCLK')")
+  (constraint skew (max 0.15mm)))

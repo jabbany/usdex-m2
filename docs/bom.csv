@@ -1,0 +1,14 @@
+Refs,Qty,Value,Footprint,Fit,MPN (suggested),Notes
+C1 C2 C8,3,10uF,C_0603_1608Metric,fit,,"buck output, X5R 6.3 V; 3.3 V bulk, X5R 6.3 V; VDD1 bulk, X5R 6.3 V"
+C3 C10,2,100nF,C_0402_1005Metric,fit,,"VDD2 decoupling toward socket pin 9, X7R; VDD1 decoupling at socket pin 4, X7R"
+C4 C5 C6,3,220nF,C_0402_1005Metric,fit,,"EN delay; AC coupling, card Rx+ to host PERp0, X7R 10 %; AC coupling, card Rx- to host PERn0, X7R 10 %"
+C7,1,4.7uF,C_0603_1608Metric,fit,,"buck input, X5R 6.3 V"
+C9,1,4.7uF,C_0402_1005Metric,fit,,"buck output, second capacitor, X5R 6.3 V (0402)"
+J2,1,10102166A812A,Amphenol_10102166A812A,fit,Amphenol 10102166A812A,"microSD Express socket, 3-in-1, push-pull, card detect, 1.55 mm"
+L1,1,2.2uH,L_Murata_DFE201610P,fit,Murata DFE201612E-2R2M=P2,"2.2 uH, 2016, Isat >= 1.5 A, <= 1.2 mm high"
+R1 R2 R5 R9,4,0R,R_0402_1005Metric,fit,,"PERST# series link (33-100 R optional); CLKREQ# series link; CLK held low (must not float; an edge selects SD mode); M.2 pin 73 (GND / VIO_CFG) to ground, legacy 3.3 V sideband module"
+R3,1,10k,R_0402_1005Metric,DNP,,"CLKREQ# pull-up, fit only if the host has none"
+R4,1,47k,R_0402_1005Metric,fit,,CMD pull-up (must not float in PCIe mode)
+R6 R8,2,100k,R_0402_1005Metric,fit,,"feedback divider bottom, 1 %; EN pull-up; with C6 delays VDD2 about 8 ms after VDD1"
+R7,1,200k,R_0402_1005Metric,fit,,"feedback divider top, 1 %"
+U1,1,TLV62568DBV,SOT-23-5,fit,TI TLV62568DBVR,"1 A synchronous buck, 1.5 MHz, 0.6 V feedback"

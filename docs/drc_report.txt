@@ -1,0 +1,9 @@
+** Drc report for hardware/msdx_m2_2230.kicad_pcb **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
